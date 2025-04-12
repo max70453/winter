@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ogani Template">
-    <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>Vinter | Избранное</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -33,32 +31,31 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="img/winter-logo.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart" style="color: #add8e6;"></i> <span style="background-color: coral;">1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag" style="color: #add8e6;"></i> <span style="background-color: coral;">3</span></a></li>
+                <li><a href="shoping-heart.html"><i class="fa fa-heart" style="color: #add8e6;"></i> <span id="heartCount" style="background-color: coral;">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag" style="color: #add8e6;"></i> <span id="cartCount" style="background-color: coral;">0</span></a></li>
             </ul>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Главная</a></li>
+                <li><a href="./index.html">Главная</a></li>
                 <li><a href="./shop-grid.html">Магазин</a></li>
                 <li><a href="./contact.html">Контакты</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+            <a href="#"><i class="fa fa-vk"></i></a>
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i>  hello@colorlib.com</li>
-                <li> +38(062)385-14-97</li>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>+38(062)385-14-97</li>
             </ul>
         </div>
     </div>
@@ -100,29 +97,18 @@
                 <div class="col-lg-6 text-center">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Главная</a></li>
+                            <li><a href="./index.html">Главная</a></li>
                             <li><a href="./shop-grid.html">Магазин</a></li>
                             <li><a href="./contact.html">Контакты</a></li>
-                            <!-- <li><a href="#">Pages</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li> -->
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="shoping-heart.html"><i class="fa fa-heart"></i> <span>0</span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+                            <li><a href="shoping-heart.html"><i class="fa fa-heart"></i> <span id="heartCount2">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span id="cartCount2">0</span></a></li>
                         </ul>
-                        <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
                     </div>
                 </div>
             </div>
@@ -133,18 +119,16 @@
     </header>
     <!-- Header Section End -->
 
-    
-
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrump.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Свяжитесь с нами</h2>
+                        <h2>Избранное</h2>
                         <div class="breadcrumb__option">
                             <a href="./index.html">Главная</a>
-                            <span>Свяжитесь с нами</span>
+                            <span>Избранное</span>
                         </div>
                     </div>
                 </div>
@@ -153,76 +137,31 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <!-- Shoping Heart Section Begin -->
+    <section class="shoping-cart spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                        <span class="icon_phone"></span>
-                        <h4>Телефон</h4>
-                        <p>+38(062)385-14-97</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                        <span class="icon_pin_alt"></span>
-                        <h4>Адрес</h4>
-                        <p>Ул. Стадионная, 22, Донецк</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                        <span class="icon_clock_alt"></span>
-                        <h4>Рабочее время</h4>
-                        <p>09:00 до 19:00</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                        <span class="icon_mail_alt"></span>
-                        <h4>Email</h4>
-                        <p> hello@colorlib.com</p>
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Товары</th>
+                                    <th>Цена</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="heartItems">
+                                <!-- Heart items will be dynamically added here -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-
-    <!-- Map Begin -->
-    <div class="map">
-        <img src="img/Screenshot_2.png" alt="">
-    </div>
-    <!-- Map End -->
-
-    <!-- Contact Form Begin -->
-    <div class="contact-form spad" style="margin-top: 10%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact__form__title">
-                        <h2 _msttexthash="3589950" _msthash="43">Оставить сообщение</h2>
-                    </div>
-                </div>
-            </div>
-            <form action="#">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Ваше имя" _mstplaceholder="115817" _msthash="44">
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Ваш адрес электронной почты" _mstplaceholder="131586" _msthash="45">
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <textarea placeholder="Ваше сообщение" _mstplaceholder="182520" _msthash="46"></textarea>
-                        <button type="submit" class="site-btn" _msttexthash="3815149" _msthash="47">ОТПРАВИТЬ СООБЩЕНИЕ</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- Contact Form End -->
+    <!-- Shoping Heart Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -265,8 +204,8 @@
                                 <script>document.write(new Date().getFullYear());</script> 
                                 Все права защищены 
                                 с <i class="fa fa-heart" style="color: coral;" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"> Винтер</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
-                        
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -283,8 +222,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
-
+    <script src="js/heart.js"></script>
 
 </body>
 

@@ -159,6 +159,14 @@ ol {
 	color: #fff;
 }
 
+.product__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* buttons */
 
 .primary-btn {
@@ -647,7 +655,7 @@ ol {
 }
 
 .hero__search__form {
-	width: 610px;
+	width: 77%;
 	height: 50px;
 	border: 1px solid #ebebeb;
 	position: relative;
@@ -1537,6 +1545,43 @@ ol {
 }
 
 .product__item {
+    transition: all 0.3s ease;
+}
+
+.product__item--grid {
+    display: block;
+}
+
+.product__item--list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.product__item--list .product__item__pic {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.product__item--list .product__item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+    width: 70%;
+}
+
+.product__list-view .row {
+    flex-direction: column;
+}
+
+.product__list-view .col-lg-4 {
+  flex: 0 0 100%;
+  max-width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
 	margin-bottom: 50px;
 }
 
@@ -1574,8 +1619,8 @@ ol {
 }
 
 .product__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
+	background: #add8e6;
+	border-color: #add8e6;
 }
 
 .product__item__pic__hover li:hover a i {
@@ -1585,7 +1630,7 @@ ol {
 
 .product__item__pic__hover li a {
 	font-size: 16px;
-	color: #1c1c1c;
+	color: coral;
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
@@ -1663,6 +1708,37 @@ ol {
 .product__pagination a:last-child,
 .blog__pagination a:last-child {
 	margin-right: 0;
+}
+
+.product__pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.product__pagination a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #b2b2b2;
+	font-size: 16px;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 10px;
+	transition: all 0.3s;
+}
+.product__pagination a:last-child {
+	margin-right: 0;
+}
+.product__pagination a:hover {
+	background: #add8e6;
+	border-color: #add8e6;
+	color: #ffffff;
+}
+.product__pagination a.active {
+	background: #add8e6;
+	border-color: #add8e6;
+	color: #ffffff;
 }
 
 /*---------------------
@@ -3132,7 +3208,7 @@ ol {
 		-webkit-border-radius: 0;
 		border-radius: 0;
 		background: transparent;
-		color: #7fad39;
+		color: coral;
 	}
 	.humberger__menu__wrapper .slicknav_nav .slicknav_row,
 	.humberger__menu__wrapper .slicknav_nav a {
@@ -3390,7 +3466,7 @@ ol {
 		-webkit-border-radius: 0;
 		border-radius: 0;
 		background: transparent;
-		color: #7fad39;
+		color: coral;
 	}
 	.humberger__menu__wrapper .slicknav_nav .slicknav_row,
 	.humberger__menu__wrapper .slicknav_nav a {
