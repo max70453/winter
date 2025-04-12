@@ -72,7 +72,7 @@ function displayHeartItems() {
         heartItemsContainer.innerHTML = `
             <tr>
                 <td colspan="4" class="text-center">
-                    <h5>Список избранного пуст</h5>
+                    <h5 class="mb-3">Список избранного пуст</h5>
                     <a href="shop-grid.html" class="primary-btn">ПЕРЕЙТИ В МАГАЗИН</a>
                 </td>
             </tr>

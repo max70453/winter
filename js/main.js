@@ -12,7 +12,7 @@ products =
     { id: 10, img: 'tab-7.png', category: 'Мороженое', name: 'Пломбир ванильный', price: 150, description: '', top: false, recomended: false, sale: false, new: false },
     { id: 11, img: 'tab-8.png', category: 'Мороженое', name: 'Мохито', price: 120, description: '', top: false, recomended: false, sale: false, new: false },
     { id: 12, img: 'banner-1.webp',category: 'Мороженое',  name: 'Земляничное', price: 320, description: '', top: false, recomended: false, sale: false, new: false },
-    { id: 13, img: 'banner-2.webp', category: 'Мороженое', name: 'Семейное', price: 160, description: '', top: false, recomended: false, sale: false, new: false },
+    { id: 13, img: 'banner-2.png', category: 'Мороженое', name: 'Семейное', price: 160, description: '', top: false, recomended: false, sale: false, new: false },
     { id: 14, img: 'lp-1.jpg', category: 'Мороженое', name: 'С клубничным джемом', price: 210, description: '', top: false, recomended: false, sale: false, new: false },
     { id: 15, img: 'lp-2.jpg', category: 'Мороженое', name: 'Пломбир арахисовый', price: 150, description: '', top: false, recomended: false, sale: false, new: false },
     { id: 16, img: 'lp-3.jpg',category: 'Мороженое',  name: 'Молочное', price: 190, description: '', top: false, recomended: false, sale: false, new: false },

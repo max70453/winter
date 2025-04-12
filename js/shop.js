@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupItemsPerPageSelector();
     
     // Настройка переключения между режимами отображения (сетка/строки)
-    setupViewModeToggle();
+    // setupViewModeToggle();
 
 function setupViewModeToggle() {
     const gridIcon = document.querySelector('.icon_grid-2x2');
