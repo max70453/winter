@@ -19,7 +19,7 @@ console.log(cart);
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="shoping__cart__item">
-        <img src="img/product/${item.image}" alt="">
+        <img style="width: 40%;" src="img/product/${item.img || 'product-1.jpg'}" alt="${item.name}">
         <h5>${item.name}</h5>
       </td>
       <td class="shoping__cart__price">
