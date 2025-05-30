@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin Panel">
+    <meta name="keywords" content="admin, panel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinter | Настройки</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/admin.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Admin Header Begin -->
+    <header class="admin-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="admin-header__logo">
+                        <a href="../index.html"><img src="../img/winter-logo.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="admin-header__right">
+                        <div class="admin-header__right__welcome">
+                            Добро пожаловать, Администратор
+                        </div>
+                        <div class="admin-header__right__logout">
+                            <a href="login.html"><i class="fa fa-sign-out"></i> Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Admin Header End -->
+
+    <!-- Admin Content Begin -->
+    <div class="admin-content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Admin Sidebar Begin -->
+                <div class="col-lg-2">
+                    <div class="admin-sidebar">
+                        <nav>
+                            <ul>
+                                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> Обзор</a></li>
+                                <li><a href="products.html"><i class="fa fa-shopping-bag"></i> Товары</a></li>
+                                <li><a href="categories.html"><i class="fa fa-list"></i> Категории</a></li>
+                                <li><a href="orders.html"><i class="fa fa-shopping-cart"></i> Заказы</a></li>
+                                <li><a href="customers.html"><i class="fa fa-users"></i> Клиенты</a></li>
+                                <li class="active"><a href="settings.html"><i class="fa fa-cog"></i> Настройки</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Admin Sidebar End -->
+
+                <!-- Admin Main Content Begin -->
+                <div class="col-lg-10">
+                    <div class="admin-main">
+                        <div class="admin-main__header">
+                            <h2><i class="fa fa-cog"></i> Настройки</h2>
+                        </div>
+
+                        <!-- Settings Tabs Begin -->
+                        <div class="admin-main__settings">
+                            <ul class="nav nav-tabs" id="settingsTabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab">
+                                        <i class="fa fa-sliders"></i> Общие настройки
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="store-tab" data-toggle="tab" href="#store" role="tab">
+                                        <i class="fa fa-shopping-bag"></i> Настройки магазина
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="delivery-tab" data-toggle="tab" href="#delivery" role="tab">
+                                        <i class="fa fa-truck"></i> Настройки доставки
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab">
+                                        <i class="fa fa-credit-card"></i> Настройки оплаты
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="settingsTabsContent">
+                                <!-- General Settings Begin -->
+                                <div class="tab-pane fade show active" id="general" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Название сайта</label>
+                                            <input type="text" class="form-control" value="Vinter">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email администратора</label>
+                                            <input type="email" class="form-control" value="admin@vinter.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Телефон</label>
+                                            <input type="tel" class="form-control" value="+7 (999) 123-45-67">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Адрес</label>
+                                            <input type="text" class="form-control" value="г. Москва, ул. Примерная, д. 1">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Логотип сайта</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="logoFile">
+                                                <label class="custom-file-label" for="logoFile">Выберите файл</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Описание сайта</label>
+                                            <textarea class="form-control" rows="3">Интернет-магазин мороженого и замороженных полуфабрикатов</textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Сохранить изменения</button>
+                                    </form>
+                                </div>
+                                <!-- General Settings End -->
+
+                                <!-- Store Settings Begin -->
+                                <div class="tab-pane fade" id="store" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Валюта</label>
+                                            <select class="form-control">
+                                                <option value="RUB" selected>Рубль (₽)</option>
+                                                <option value="USD">Доллар ($)</option>
+                                                <option value="EUR">Евро (€)</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Налоговая ставка (%)</label>
+                                            <input type="number" class="form-control" value="20">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Минимальная сумма заказа</label>
+                                            <input type="number" class="form-control" value="500">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Количество товаров на странице</label>
+                                            <input type="number" class="form-control" value="24">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="stockTracking" checked>
+                                                <label class="custom-control-label" for="stockTracking">Отслеживание остатков</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="reviewsEnabled" checked>
+                                                <label class="custom-control-label" for="reviewsEnabled">Разрешить отзывы</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Сохранить изменения</button>
+                                    </form>
+                                </div>
+                                <!-- Store Settings End -->
+
+                                <!-- Delivery Settings Begin -->
+                                <div class="tab-pane fade" id="delivery" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Способы доставки</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="courierDelivery" checked>
+                                                <label class="custom-control-label" for="courierDelivery">Курьерская доставка</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="pickupDelivery" checked>
+                                                <label class="custom-control-label" for="pickupDelivery">Самовывоз</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="postDelivery">
+                                                <label class="custom-control-label" for="postDelivery">Почтовая доставка</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Стоимость курьерской доставки</label>
+                                            <input type="number" class="form-control" value="200">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Бесплатная доставка от</label>
+                                            <input type="number" class="form-control" value="2000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Сроки доставки</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="number" class="form-control" placeholder="От (часов)" value="2">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="number" class="form-control" placeholder="До (часов)" value="4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Сохранить изменения</button>
+                                    </form>
+                                </div>
+                                <!-- Delivery Settings End -->
+
+                                <!-- Payment Settings Begin -->
+                                <div class="tab-pane fade" id="payment" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Способы оплаты</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="cardPayment" checked>
+                                                <label class="custom-control-label" for="cardPayment">Оплата картой онлайн</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="cashPayment" checked>
+                                                <label class="custom-control-label" for="cashPayment">Наличными при получении</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="bankTransfer">
+                                                <label class="custom-control-label" for="bankTransfer">Банковский перевод</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Платежная система</label>
+                                            <select class="form-control">
+                                                <option value="yookassa" selected>ЮKassa</option>
+                                                <option value="tinkoff">Тинькофф</option>
+                                                <option value="sberbank">Сбербанк</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>API ключ</label>
+                                            <input type="password" class="form-control" value="sk_test_123456789">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="testMode" checked>
+                                                <label class="custom-control-label" for="testMode">Тестовый режим</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Сохранить изменения</button>
+                                    </form>
+                                </div>
+                                <!-- Payment Settings End -->
+                            </div>
+                        </div>
+                        <!-- Settings Tabs End -->
+                    </div>
+                </div>
+                <!-- Admin Main Content End -->
+            </div>
+        </div>
+    </div>
+    <!-- Admin Content End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html> 

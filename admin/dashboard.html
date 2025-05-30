@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin Panel">
+    <meta name="keywords" content="admin, panel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinter | Панель управления</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/admin.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Admin Header Begin -->
+    <header class="admin-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="admin-header__logo">
+                        <a href="../index.html"><img src="../img/winter-logo.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="admin-header__right">
+                        <div class="admin-header__right__welcome">
+                            Добро пожаловать, Администратор
+                        </div>
+                        <div class="admin-header__right__logout">
+                            <a href="login.html"><i class="fa fa-sign-out"></i> Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Admin Header End -->
+
+    <!-- Admin Content Begin -->
+    <div class="admin-content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Admin Sidebar Begin -->
+                <div class="col-lg-2">
+                    <div class="admin-sidebar">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="dashboard.html"><i class="fa fa-dashboard"></i> Обзор</a></li>
+                                <li><a href="products.html"><i class="fa fa-shopping-bag"></i> Товары</a></li>
+                                <li><a href="categories.html"><i class="fa fa-list"></i> Категории</a></li>
+                                <li><a href="orders.html"><i class="fa fa-shopping-cart"></i> Заказы</a></li>
+                                <li><a href="customers.html"><i class="fa fa-users"></i> Клиенты</a></li>
+                                <li><a href="settings.html"><i class="fa fa-cog"></i> Настройки</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Admin Sidebar End -->
+
+                <!-- Admin Main Content Begin -->
+                <div class="col-lg-10">
+                    <div class="admin-main">
+                        <div class="admin-main__header">
+                            <h2><i class="fa fa-dashboard"></i> Обзор</h2>
+                            <div class="admin-main__header__actions">
+                                <button class="btn btn-info"><i class="fa fa-refresh"></i> Обновить</button>
+                            </div>
+                        </div>
+                        <div class="admin-main__content">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="admin-main__card">
+                                        <div class="admin-main__card__icon">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                        <div class="admin-main__card__info">
+                                            <h4>Заказы</h4>
+                                            <p>25 новых</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="admin-main__card">
+                                        <div class="admin-main__card__icon">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="admin-main__card__info">
+                                            <h4>Клиенты</h4>
+                                            <p>850 всего</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="admin-main__card">
+                                        <div class="admin-main__card__icon">
+                                            <i class="fa fa-shopping-bag"></i>
+                                        </div>
+                                        <div class="admin-main__card__info">
+                                            <h4>Товары</h4>
+                                            <p>120 всего</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="admin-main__card">
+                                        <div class="admin-main__card__icon">
+                                            <i class="fa fa-money"></i>
+                                        </div>
+                                        <div class="admin-main__card__info">
+                                            <h4>Доход</h4>
+                                            <p>₽85,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-lg-8">
+                                    <div class="admin-main__table">
+                                        <h4><i class="fa fa-clock-o"></i> Последние заказы</h4>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Клиент</th>
+                                                    <th>Сумма</th>
+                                                    <th>Статус</th>
+                                                    <th>Действия</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#1234</td>
+                                                    <td>Иван Петров</td>
+                                                    <td>₽2,500</td>
+                                                    <td><span class="badge badge-success">Выполнен</span></td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-sm btn-info"><i class="fa fa-eye"></i> Просмотр</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#1233</td>
+                                                    <td>Мария Иванова</td>
+                                                    <td>₽1,800</td>
+                                                    <td><span class="badge badge-warning">В обработке</span></td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-sm btn-info"><i class="fa fa-eye"></i> Просмотр</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#1232</td>
+                                                    <td>Алексей Сидоров</td>
+                                                    <td>₽3,200</td>
+                                                    <td><span class="badge badge-danger">Отменен</span></td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-sm btn-info"><i class="fa fa-eye"></i> Просмотр</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="admin-main__table">
+                                        <h4>Популярные товары</h4>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Товар</th>
+                                                    <th>Продажи</th>
+                                                    <th>Цена</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Мороженое "Пломбир"</td>
+                                                    <td>45</td>
+                                                    <td>₽150</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Пельмени "Классические"</td>
+                                                    <td>38</td>
+                                                    <td>₽350</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Мороженое "Шоколадное"</td>
+                                                    <td>32</td>
+                                                    <td>₽180</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admin Main Content End -->
+            </div>
+        </div>
+    </div>
+    <!-- Admin Content End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html> 

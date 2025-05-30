@@ -1,0 +1,80 @@
+.login__form,
+.register__form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login__form h3,
+.register__form h3 {
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input__item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input__item input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 14px;
+    color: #1c1c1c;
+    transition: all 0.3s;
+}
+
+.input__item input:focus {
+    border-color: coral;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.3);
+}
+
+.input__item span {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #add8e6;
+}
+
+.site-btn {
+    width: 100%;
+    height: 50px;
+    background: #add8e6;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.site-btn:hover {
+    background: coral;
+}
+
+.login__register,
+.register__login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login__register a,
+.register__login a {
+    color: coral;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login__register a:hover,
+.register__login a:hover {
+    text-decoration: underline;
+} 
